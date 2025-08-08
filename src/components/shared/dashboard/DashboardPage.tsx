@@ -23,7 +23,6 @@ export default function DashboardPage() {
     { name: "Emma", imageUrl: "https://i.pravatar.cc/100?img=5" },
   ];
   return (
-    // className='py-7'
     <div>
       <div className='flex'>
         <div className='flex items-center'>
@@ -44,12 +43,6 @@ export default function DashboardPage() {
       <div className='flex items-center my-7'>
         <AvatarGroup users={users} />
       </div>
-      {/* <div>
-        <Image src={ProfileImages} alt='profiles' />
-        <p className='text-[#15272D9E] text-[15px] leading-5 ml-3'>
-          Ava, Liam, Noah +12 others
-        </p>
-      </div> */}
 
       <TabNavWrapper>
         <TabNav
@@ -72,7 +65,7 @@ export default function DashboardPage() {
       <TabContent>
         <div>
           {activeTab === "overview" && <OverviewTab />}
-          {activeTab === "overview" && <TransactionsTab />}
+          {activeTab === "transactions" && <TransactionsTab />}
         </div>
       </TabContent>
     </div>
