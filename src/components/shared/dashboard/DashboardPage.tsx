@@ -7,6 +7,8 @@ import TabNav from "@/components/ui/tab/TabNav";
 import TabNavWrapper from "@/components/ui/tab/TabNavWrapper";
 import OverviewTab from "./OverviewTab";
 import AvatarGroup from "@/components/ui/AvatarGroup";
+import TabContent from "@/components/ui/tab/TabContent";
+import TransactionsTab from "./TransactionsTab";
 export default function DashboardPage() {
   const [activeTab, setActiveTab] = useState("overview");
   const users = [
@@ -67,7 +69,12 @@ export default function DashboardPage() {
           }}
         />
       </TabNavWrapper>
-      <OverviewTab />
+      <TabContent>
+        <div>
+          {activeTab === "overview" && <OverviewTab />}
+          {activeTab === "overview" && <TransactionsTab />}
+        </div>
+      </TabContent>
     </div>
   );
 }
