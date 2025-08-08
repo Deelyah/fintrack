@@ -117,30 +117,28 @@ export default function OverviewTab() {
         const aValue = a[column];
         const bValue = b[column];
 
-        // Handle number comparison
+        // for numbers
         if (typeof aValue === "number" && typeof bValue === "number") {
           console.log(typeof aValue);
           return order === "asc" ? aValue - bValue : bValue - aValue;
         }
 
-        // Handle string comparison
-
+        // for strings
         if (typeof aValue === "string" && typeof bValue === "string") {
           return order === "asc"
             ? aValue.localeCompare(bValue)
             : bValue.localeCompare(aValue);
         }
 
-        // // Handle date comparison
+        // for date
         if (column == "date") {
-          let aDate = new Date(aValue);
-          let bDate = new Date(bValue);
+          const aDate = new Date(aValue);
+          const bDate = new Date(bValue);
           const timeA = aDate?.getTime();
           const timeB = bDate.getTime();
           return order === "asc" ? timeA - timeB : timeB - timeA;
         }
 
-        // Fallback for other types or mixed types
         return 0;
       });
 

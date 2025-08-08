@@ -6,8 +6,7 @@ import appGrid from "../../../public/app-grid.svg";
 import profileAvatar from "../../../public/profile.svg";
 import Link from "next/link";
 
-interface TopNavProps {}
-export default function TopNav({}: TopNavProps) {
+export default function TopNav() {
   return (
     <nav className='py-4 px-12 flex'>
       <div className='flex items-center gap-x-7'>

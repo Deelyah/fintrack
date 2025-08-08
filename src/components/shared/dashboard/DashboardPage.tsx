@@ -1,6 +1,5 @@
 import StatusBadge from "@/components/ui/StatusBadge";
 import kebabMenu from "../../../../public/kebab-menu.svg";
-import ProfileImages from "../../../../public/profile-pictures.svg";
 import Image from "next/image";
 import { useState } from "react";
 import TabNav from "@/components/ui/tab/TabNav";
