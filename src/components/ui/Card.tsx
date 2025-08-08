@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 interface CardProps {
-  cardTitle: String;
-  totalAmount: String;
-  percentage: String;
+  cardTitle: string;
+  totalAmount: string;
+  percentage: string;
 }
 
 export default function Card({

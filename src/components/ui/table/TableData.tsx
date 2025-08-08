@@ -2,7 +2,7 @@
 
 interface TableDataProps {
   children: React.ReactNode;
-  customClass?: String;
+  customClass?: string;
 }
 export default function TableData({ customClass, children }: TableDataProps) {
   return (

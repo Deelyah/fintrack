@@ -3,9 +3,9 @@ import Image from "next/image";
 import { useState } from "react";
 
 interface TableHeadProps {
-  headTitle: String;
-  onSort: (order: "asc" | "desc", title: String) => void;
-  customClass?: String;
+  headTitle: string;
+  onSort: (order: "asc" | "desc", title: string) => void;
+  customClass?: string;
 }
 export default function TableHead({
   headTitle,
