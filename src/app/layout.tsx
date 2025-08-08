@@ -13,12 +13,30 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navLinks = [
+    {
+      path: "/",
+      title: "Dashboard",
+    },
+    {
+      path: "/transactions",
+      title: "Transactions",
+    },
+    {
+      path: "/reports",
+      title: "Reports",
+    },
+    {
+      path: "/settings",
+      title: "Settings",
+    },
+  ];
   return (
     <html lang='en'>
       <body className={`antialiased`}>
         <TopNav />
         <div className='flex gap-x-12'>
-          <SideBar />
+          <SideBar navLinks={navLinks} />
           <div className='flex-1'>{children}</div>
         </div>
       </body>
