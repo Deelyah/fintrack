@@ -1,25 +1,39 @@
+import Link from "next/link";
+
 export default function SideBar() {
   return (
     <aside className='py-7 pl-12 w-[320px]'>
       <div className='bg-[#38677629] rounded-2xl'>
-        <p className='py-2 px-4.5 text-[#3A6C7B] text-[15px] leading-5 font-medium cursor-pointer'>
+        <Link
+          href='/'
+          className='block py-2 px-4.5 text-[#3A6C7B] text-[15px] leading-5 font-medium cursor-pointer'
+        >
           Dashboard
-        </p>
+        </Link>
       </div>
       <div className='hover:bg-[#38677610] rounded-2xl'>
-        <p className='py-2 px-4.5 text-[#1B2528] text-[15px] leading-5 font-medium cursor-pointer'>
+        <Link
+          href='/transactions'
+          className='block py-2 px-4.5 text-[#1B2528] text-[15px] leading-5 font-medium cursor-pointer'
+        >
           Transactions
-        </p>
+        </Link>
       </div>
       <div className='hover:bg-[#38677610] rounded-2xl'>
-        <p className='py-2 px-4.5 text-[#1B2528] text-[15px] leading-5 font-medium cursor-pointer'>
+        <Link
+          href='/reports'
+          className='block py-2 px-4.5 text-[#1B2528] text-[15px] leading-5 font-medium cursor-pointer'
+        >
           Reports
-        </p>
+        </Link>
       </div>
       <div className='hover:bg-[#38677610] rounded-2xl'>
-        <p className='py-2 px-4.5 text-[#1B2528] text-[15px] leading-5 font-medium cursor-pointer'>
+        <Link
+          href='/settings'
+          className='block py-2 px-4.5 text-[#1B2528] text-[15px] leading-5 font-medium cursor-pointer'
+        >
           Settings
-        </p>
+        </Link>
       </div>
     </aside>
   );

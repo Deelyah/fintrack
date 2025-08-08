@@ -17,7 +17,13 @@ export default function Card({
         <p className='font-bold text-[17px] mr-auto text-[#1B2528] leading-6'>
           {cardTitle}
         </p>
-        <Image src='/kebab-menu.svg' alt='kebab' width={18} height={4} />
+        <Image
+          src='/kebab-menu.svg'
+          alt='kebab'
+          width={18}
+          height={4}
+          className='cursor-pointer'
+        />
       </div>
       <p className='text-[34px] font-bold mb-1 text-[#1B2528] leading-10'>
         {totalAmount}

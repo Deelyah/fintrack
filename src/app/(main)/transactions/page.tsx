@@ -1,0 +1,7 @@
+export default function TransactionsPage() {
+  return (
+    <div className='h-[70vh] w-full flex justify-center items-center'>
+      <p>Transactions Page</p>
+    </div>
+  );
+}
